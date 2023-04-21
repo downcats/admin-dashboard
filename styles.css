@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #2563eb;
+    font-family: 'Lato', sans-serif;
+}
+
+.title {
+    font-size: 2rem;
+    margin: 1.6rem 1rem;
+    color: white;
+}
+
+.hamburger-btn {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    background: transparent;
+    border: none !important;
+}
+
+.hamburger-links {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-tabs,
+.settings-tabs {
+    width: 100%;
+}
+
+.main-tabs ul,
+.settings-tabs ul {
+    padding: 5px 10px 10px 15px;
+}
+
+.main-tabs li,
+.settings-tabs li {
+    list-style: none;
+    margin-bottom: 15px;
+    padding: 4px;
+}
+
+.main-tabs li:hover,
+.settings-tabs li:hover {
+    background-color: #93c5fd;
+}
+
+.main-tabs li a,
+.settings-tabs li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.hamburger-links.active {
+    display: flex;
+}
