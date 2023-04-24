@@ -11,7 +11,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
     background-color: #2563eb;
     font-family: 'Lato', sans-serif;
 }
@@ -20,14 +19,30 @@ body {
     font-size: 2rem;
     margin: 1.6rem 1rem;
     color: white;
+    min-width: 250px;
+}
+
+.sidebar-buttons {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100px;
 }
 
 .hamburger-btn {
     position: absolute;
-    top: 2rem;
-    right: 1rem;
+    top: 5vh;
+    right: 2vw;
     background: transparent;
-    border: none !important;
+    border: none;
+}
+
+.search-btn {
+    position: absolute;
+    top: 5vh;
+    right: 13vw;
+    background: transparent;
+    border: none;
 }
 
 .hamburger-links {
@@ -67,5 +82,36 @@ body {
 }
 
 .hamburger-links.active {
+    display: flex;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.searchbar {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #2563eb;
+    height: 70px;
+    width: 100%;
+}
+
+.search-icon {
+    display: none;
+}
+
+#search {
+    border-radius: 50px;
+    width: 90vw;
+    height: 4vh;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.searchbar.active {
     display: flex;
 }
